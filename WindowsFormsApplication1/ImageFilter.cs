@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * Copyright 2015, RTSoft
+ * 
+ */
+
+using System;
 using System.Drawing;
 using System.Collections.Generic;
 using System.Linq;
