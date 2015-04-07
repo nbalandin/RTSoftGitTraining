@@ -12,6 +12,7 @@ namespace WindowsFormsApplication1
             InitializeComponent();
 
             comboBox1.Items.Add("Grayscale");
+            comboBox1.Items.Add("BlackWhite");
             comboBox1.SelectedIndex = 0;
         }
 
@@ -35,6 +36,12 @@ namespace WindowsFormsApplication1
                 case 0:
                 {
                     var grayImage = ImageFilter.ConvertToGrayscaleImage(pictureBox1.Image);
+                    pictureBox1.Image = grayImage;
+                    break;
+                }
+                case 1:
+                {
+                    var grayImage = ImageFilter.ConvertToBlackWhiteImage(pictureBox1.Image);
                     pictureBox1.Image = grayImage;
                     break;
                 }
